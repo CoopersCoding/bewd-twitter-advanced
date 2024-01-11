@@ -1,6 +1,14 @@
 local:
-  service: Disk
+  service: Disk 
   root: <%= Rails.root.join("storage") %>
-test:
+
+test: 
   service: Disk
   root: <%= Rails.root.join("tmp/storage") %>
+
+amazon: 
+  service: S3 
+  access_key_id: <%= ENV['AKIA3GJ63ILCGPW5EOUZ'] %> 
+  secret_access_key: <%= ENV['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'] %> 
+  region: "us-east-1" 
+  bucket: <%= ENV['twitterphoto-project'] %> 
