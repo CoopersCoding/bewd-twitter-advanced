@@ -21,5 +21,5 @@ db/*.sqlite3
 
 public/system
 .env
-/config/.storage
+bewd-twitter-advanced/config/storage.yml
 
